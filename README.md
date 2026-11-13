@@ -74,3 +74,35 @@ Y la API responde 201:
   "categoria": { "id": 4, "nombre": "Almacenamiento" }
 }
 ```
+
+## Pruebas en /docs
+
+Estas son las pruebas del CRUD de categorías hechas con Try it out. Las de productos están en la carpeta [capturas](capturas).
+
+**Listar categorías (200)**
+
+![GET /categorias](capturas/11_categorias_listar.jpg)
+
+**Obtener una categoría (200)**
+
+![GET /categorias/2](capturas/12_categorias_obtener.jpg)
+
+**Crear una categoría (201)**
+
+![POST /categorias](capturas/13_categorias_crear.jpg)
+
+**Actualizar una categoría (200)**
+
+![PUT /categorias/4](capturas/14_categorias_actualizar.jpg)
+
+**Eliminar una categoría (200)**
+
+![DELETE /categorias/4](capturas/15_categorias_eliminar.jpg)
+
+**Categoría que no existe (404)**
+
+![GET /categorias/99](capturas/16_categorias_error_404.jpg)
+
+**Falta el campo nombre (422)**
+
+![POST /categorias sin nombre](capturas/17_categorias_error_422.jpg)
